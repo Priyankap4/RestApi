@@ -10,17 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Priyankap4/RestApi.git"
+    "url": "https://github.com/Priyankap4/RestApi.git"
   },
   "author": "Priyanka",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Priyankap4/RestApi/issues"
+    "url": "https://github.com/Priyankap4/RestApi.git/issues"
   },
-  "homepage": "https://github.com/Priyankap4/RestApi#readme",
+  "homepage": "https://github.com/Priyankap4/RestApi.git#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.2.0",
     "mongoose": "^6.1.2"
   }
 }
