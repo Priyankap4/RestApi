@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Priyankap4/RestApi#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "hbs": "^4.2.0",
     "mongoose": "^6.1.2"
   }
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {{>header}}
+  </head>
+  <body>
+      {{>navbar}}
+    <form action="/studentDetails" method="post">
+      <div class="row mt-5 mx-5">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Name"
+            name="Name"
+          />
+        </div>
+       </div>
+
+       <div class="row mt-4 mx-5">
+        <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter admission number"
+              name="AdmissionNumber"
+            />
+          </div>
+       </div>
+
+       <div class="row mt-4 mx-5">
+        <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Class"
+              name="Class"
+            />
+          </div>
+       </div>
+
+       <div class="row mt-4 mx-5">
+        <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Marks"
+              name="Marks"
+            />
+          </div>
+       </div>
+
+       <div class="row  mx-5">
+         <div class="col cntainer">
+           <div class="star-widget">
+             <input type="radio" name="StarRating" id="StarRating-5">
+             <label for="StarRating-5" class="far fa-star"></label>
+             <input type="radio" name="StarRating" id="StarRating-4">
+             <label for="StarRating-4" class="far fa-star"></label>
+             <input type="radio" name="StarRating" id="StarRating-3">
+             <label for="StarRating-3" class="far fa-star"></label>
+             <input type="radio" name="StarRating" id="StarRating-2">
+             <label for="StarRating-2" class="far fa-star"></label>
+             <input type="radio" name="StarRating" id="StarRating-1">
+             <label for="StarRating-1" class="far fa-star"></label>
+           </div>
+         </div>
+       </div>
+
+       <div class="row my-4 mx-5">
+        <div class="col">
+            <label for="Feedback">Feedback:</label>
+            <textarea class="form-control" rows="5" id="text" name="Feedback"></textarea>
+        </div>
+       </div>
+
+      <input type="submit" class="btn btn-primary mt-4 mx-5" value="Register" />
+    </form>
+  </body>
+</html>
