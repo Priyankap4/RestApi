@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const FeedbackSchema = new mongoose.Schema({
-    Comment : String,
-    StarRating : Number
-},{
-    timestamps: true
+const FeedbackSchema = new Schema({
+        Feedback : Array,
+        StarRating : Number
 });
 
-const studentSchema = new mongoose.Schema({
+const studentSchema = new Schema({
     Name :{
         type: String,
         required: true
@@ -21,13 +20,11 @@ const studentSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    Marks:{
-        type: Array,
+    Marks:[{
+        type: Number,
         required: true
-    },
-    Feedback:{
-        type: [FeedbackSchema]
-    }
+    }],
+    Feedback: [FeedbackSchema]
 });
 
 const student = new mongoose.model("Student", studentSchema);
